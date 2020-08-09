@@ -25,7 +25,7 @@ public class Hello extends AppCompatActivity {
 
     }
 
-    void next(Button btn, final Class<? extends Activity> activity){
+    public void next(Button btn, final Class<? extends Activity> activity){
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
