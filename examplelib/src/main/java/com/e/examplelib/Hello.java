@@ -35,7 +35,7 @@ public class Hello extends AppCompatActivity {
         });
     }
 
-    public void toast(Context c, String msg){
+    public static void toast(Context c, String msg){
         Toast.makeText(c, msg, Toast.LENGTH_SHORT).show();
     }
 }
