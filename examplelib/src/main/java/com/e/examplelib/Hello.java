@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Hello extends AppCompatActivity {
 
@@ -32,5 +33,9 @@ public class Hello extends AppCompatActivity {
                 startActivity(new Intent(context, activity));
             }
         });
+    }
+
+    public void toast(Context c, String msg){
+        Toast.makeText(c, msg, Toast.LENGTH_SHORT).show();
     }
 }
