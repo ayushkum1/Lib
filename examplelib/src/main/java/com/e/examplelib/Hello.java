@@ -21,11 +21,11 @@ public class Hello extends AppCompatActivity {
         setContentView(R.layout.activity_hello);
 
         btnNext = findViewById(R.id.next);
-        next(btnNext, MainActivity.class);
+        next(context, btnNext, MainActivity.class);
 
     }
 
-    public void next(Button btn, final Class<? extends Activity> activity){
+    public void next(Context c, Button btn, final Class<? extends Activity> activity){
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
